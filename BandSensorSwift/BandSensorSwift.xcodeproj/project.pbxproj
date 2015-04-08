@@ -12,6 +12,8 @@
 		9331C4E81AD5001D001A4E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9331C4E61AD5001D001A4E69 /* Main.storyboard */; };
 		9331C4EA1AD5001D001A4E69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9331C4E91AD5001D001A4E69 /* Images.xcassets */; };
 		9331C4ED1AD5001D001A4E69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9331C4EB1AD5001D001A4E69 /* LaunchScreen.xib */; };
+		9331C5071AD50657001A4E69 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9331C5061AD50657001A4E69 /* CoreBluetooth.framework */; };
+		9331C5091AD5066F001A4E69 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9331C5081AD5066F001A4E69 /* MicrosoftBandKit_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		9331C4E71AD5001D001A4E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9331C4E91AD5001D001A4E69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9331C4EC1AD5001D001A4E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9331C5051AD502D8001A4E69 /* BandSensorSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BandSensorSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		9331C5061AD50657001A4E69 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9331C5081AD5066F001A4E69 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9331C5071AD50657001A4E69 /* CoreBluetooth.framework in Frameworks */,
+				9331C5091AD5066F001A4E69 /* MicrosoftBandKit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				9331C4E21AD5001D001A4E69 /* AppDelegate.swift */,
+				9331C5051AD502D8001A4E69 /* BandSensorSwift-Bridging-Header.h */,
 				9331C4E41AD5001D001A4E69 /* ViewController.swift */,
 				9331C4E61AD5001D001A4E69 /* Main.storyboard */,
 				9331C4E91AD5001D001A4E69 /* Images.xcassets */,
@@ -76,6 +84,8 @@
 		9331C5021AD501BA001A4E69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9331C5081AD5066F001A4E69 /* MicrosoftBandKit_iOS.framework */,
+				9331C5061AD50657001A4E69 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,9 +272,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mthistle/OneDrive/New,
+					Thistle,
+					LLC/Apps/SendHapticSwift,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BandSensorSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BandSensorSwift/BandSensorSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -272,9 +290,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mthistle/OneDrive/New,
+					Thistle,
+					LLC/Apps/SendHapticSwift,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BandSensorSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BandSensorSwift/BandSensorSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
