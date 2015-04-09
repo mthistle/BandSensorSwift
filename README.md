@@ -1,7 +1,7 @@
 # BandSensorSwift
 Swift version of the Microsoft Band Kit sample app BandSensor
 
-This is a port of the BandSensorSwift example from the Microsoft Band Kit SDK for iOS samples. The SDK can be found at http://developer.microsoftband.com/
+This is a port of the BandSensor example from the Microsoft Band Kit SDK for iOS samples. The SDK can be found at http://developer.microsoftband.com/
 
 ## Dependencies
 
@@ -20,4 +20,4 @@ Mark Thistle, http://droolfactory.blogspot.com
 
 ## About the Code
 
-This is a straight port. The only real difference is the use of a dispatch_async with block instead of using performSelector to handle the sensor unsubscribe after 60 minutes.
+This is a straight port. The only real difference is the use of a dispatch_async with block instead of using performSelector to handle the sensor unsubscribe after 60 seconds.
