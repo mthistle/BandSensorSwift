@@ -1,3 +1,5 @@
+# THIS IS An OLD SAMPLE FOR Swift 1.2 and Xcode 6.3 Beta - You can use this as a reference but the code is out of date. For Swift 2 samples, see: https://github.com/mthistle/MicrosoftBandKit_iOS-Swift2/
+
 # BandSensorSwift
 Swift version of the Microsoft Band Kit sample app BandSensor
 
